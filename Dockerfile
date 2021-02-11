@@ -17,3 +17,5 @@ RUN echo "[TELEMETRY]\nenabled = F" > /var/opt/ssis/ssis.conf
 RUN SSIS_PID=Express ACCEPT_EULA=Y /opt/ssis/bin/ssis-conf -n setup
 
 USER mssql
+
+WORKDIR /home/mssql
